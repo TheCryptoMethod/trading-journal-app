@@ -1,0 +1,32 @@
+{
+  "project_name": "trading-journal-app",
+  "description": "A web application for traders to log, track, and analyze their trading activities, featuring a highly animated magenta-themed user interface.",
+  "type": "saas",
+  "style": "modern",
+  "color_scheme": "colorful",
+  "sections": [
+    "hero",
+    "features",
+    "pricing",
+    "testimonials",
+    "contact",
+    "faq",
+    "footer"
+  ],
+  "features": [
+    "animations",
+    "responsive",
+    "seo",
+    "data-visualization",
+    "performance-tracking",
+    "journaling",
+    "analytics"
+  ],
+  "target_audience": "Individual traders and investors seeking to improve their trading performance through detailed journaling and analytics.",
+  "reference_urls": [
+    "https://tradezella.com"
+  ],
+  "framework": "nextjs",
+  "original_prompt": "Baue mir eine Trading-Journal Seite mit viel animation im margenta style. Nehme inspiration auf Tradezella von den features und funktionen",
+  "hero_image": "hero-bg.png"
+}
