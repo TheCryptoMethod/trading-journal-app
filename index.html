@@ -3,81 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trader's Log & Analysis – Master Your Trades</title>
-    <meta name="description" content="Trader's Log & Analysis is a premium web application for serious traders to log, track, and analyze their trading activities with advanced analytics and a vibrant, intuitive interface.">
-    <meta name="keywords" content="trading log, trading journal, trade analysis, trading app, stock market, forex, crypto, investment, performance tracking, SaaS">
+    <title>TradingJournal – Pinpoint Your Profit Leaks. Master Your Trades.</title>
+    <meta name="description" content="Advanced trading journal application for active daytraders. Featuring deep analytics, robust backtesting, and performance insights to sharpen your strategy and maximize profits.">
+    <meta name="keywords" content="trading journal, day trading, active trader, trading analytics, backtesting, trading performance, stock market, futures, forex, crypto, trade analysis">
+    <meta name="author" content="TradingJournal App">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.traderslog.com/"> <!-- Replace with actual URL -->
-    <meta property="og:title" content="Trader's Log & Analysis – Master Your Trades">
-    <meta property="og:description" content="Elevate your trading performance with detailed journaling and analytics. Track, learn, and profit.">
-    <meta property="og:image" content="https://www.traderslog.com/og-image.jpg"> <!-- Replace with actual image -->
+    <meta property="og:url" content="https://www.yourtradingjournal.com/"> <!-- Replace with actual URL -->
+    <meta property="og:title" content="TradingJournal – Pinpoint Your Profit Leaks. Master Your Trades.">
+    <meta property="og:description" content="Advanced trading journal application for active daytraders. Featuring deep analytics, robust backtesting, and performance insights to sharpen your strategy and maximize profits.">
+    <meta property="og:image" content="https://www.yourtradingjournal.com/hero-bg.png"> <!-- Replace with actual image URL -->
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.traderslog.com/"> <!-- Replace with actual URL -->
-    <meta property="twitter:title" content="Trader's Log & Analysis – Master Your Trades">
-    <meta property="twitter:description" content="Elevate your trading performance with detailed journaling and analytics. Track, learn, and profit.">
-    <meta property="twitter:image" content="https://www.traderslog.com/twitter-image.jpg"> <!-- Replace with actual image -->
+    <meta property="twitter:url" content="https://www.yourtradingjournal.com/"> <!-- Replace with actual URL -->
+    <meta property="twitter:title" content="TradingJournal – Pinpoint Your Profit Leaks. Master Your Trades.">
+    <meta property="twitter:description" content="Advanced trading journal application for active daytraders. Featuring deep analytics, robust backtesting, and performance insights to sharpen your strategy and maximize profits.">
+    <meta property="twitter:image" content="https://www.yourtradingjournal.com/hero-bg.png">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* 1. CSS Custom Properties (Design System) */
+        /* Design Tokens */
         :root {
             /* Colors */
-            --color-primary: #FF33FF; /* Electric Magenta */
-            --color-secondary: #33CCFF; /* Electric Blue */
-            --color-accent: #CCFF33; /* Lime Green */
-            --color-background: #1A1A1A; /* Deep Charcoal */
-            --color-surface: #2A2A2A; /* Dark Gray */
-            --color-text-primary: #F0F0F0; /* Light Gray */
-            --color-text-secondary: #AAAAAA; /* Medium Gray */
-            --color-error: #FF4444; /* Vivid Red */
-            --color-warning: #FFBB00; /* Amber Yellow */
-            --color-success: #00CC66; /* Emerald Green */
+            --color-primary: #A30062; /* Brand Magenta */
+            --color-secondary: #0062A3; /* Deep Blue */
+            --color-accent: #00FFFF; /* Electric Cyan */
+            --color-background: #121212; /* Dark Grey */
+            --color-surface: #1E1E1E; /* Slightly Lighter Dark Grey */
+            --color-text: #E0E0E0; /* Light Grey */
+            --color-text-secondary: #A0A0A0; /* Muted Grey */
+            --color-success: #00C853;
+            --color-error: #D32F2F;
+            --color-warning: #FFC107;
+            --color-footer-bg: #0A0A0A; /* Slightly darker than main background */
+            --color-highlighted-plan-bg: #2A001A; /* Magenta-tinted background */
 
             /* Typography */
-            --font-family-headings: 'Poppins', sans-serif;
+            --font-family-headings: 'Inter', sans-serif;
             --font-family-body: 'Inter', sans-serif;
 
-            --h1-font-size-desktop: 64px;
-            --h1-font-size-tablet: 48px;
-            --h1-font-size-mobile: 36px;
-            --h1-font-weight: 700;
-            --h1-line-height: 1.2;
+            --font-size-h1: 48px;
+            --line-height-h1: 1.2;
+            --font-size-h2: 36px;
+            --line-height-h2: 1.25;
+            --font-size-h3: 28px;
+            --line-height-h3: 1.3;
+            --font-size-h4: 24px;
+            --line-height-h4: 1.35;
+            --font-size-h5: 20px;
+            --line-height-h5: 1.4;
+            --font-size-h6: 18px;
+            --line-height-h6: 1.45;
+            --font-size-body-large: 18px;
+            --line-height-body-large: 1.5;
+            --font-size-body: 16px;
+            --line-height-body: 1.5;
+            --font-size-small: 14px;
+            --line-height-small: 1.6;
+            --font-size-extra-small: 12px;
+            --line-height-extra-small: 1.6;
 
-            --h2-font-size-desktop: 48px;
-            --h2-font-size-tablet: 36px;
-            --h2-font-size-mobile: 28px;
-            --h2-font-weight: 600;
-            --h2-line-height: 1.2;
-
-            --h3-font-size-desktop: 32px;
-            --h3-font-size-tablet: 28px;
-            --h3-font-size-mobile: 24px;
-            --h3-font-weight: 600;
-            --h3-line-height: 1.3;
-
-            --h4-font-size-desktop: 24px;
-            --h4-font-size-tablet: 20px;
-            --h4-font-size-mobile: 18px;
-            --h4-font-weight: 500;
-            --h4-line-height: 1.4;
-
-            --body-large-font-size: 18px;
-            --body-regular-font-size: 16px;
-            --body-small-font-size: 14px;
-            --caption-font-size: 12px;
-            --body-font-weight: 400;
-            --body-line-height: 1.6;
+            --font-weight-regular: 400;
+            --font-weight-medium: 500;
+            --font-weight-semi-bold: 600;
+            --font-weight-bold: 700;
 
             /* Spacing Scale */
             --spacing-xs: 4px;
@@ -88,26 +83,18 @@
             --spacing-xxl: 128px;
 
             /* Border Radius */
-            --border-radius-none: 0px;
-            --border-radius-sm: 4px;
-            --border-radius-md: 8px;
-            --border-radius-lg: 16px;
-            --border-radius-full: 9999px;
+            --border-radius-default: 4px;
+            --border-radius-pill: 9999px;
 
             /* Shadow Styles */
-            --shadow-none: none;
-            --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.2);
-            --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.3);
-            --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.4);
-            --shadow-magenta-glow: 0px 0px 15px rgba(255, 51, 255, 0.7), 0px 0px 30px rgba(255, 51, 255, 0.3);
-
-            /* Transitions */
-            --transition-duration: 0.3s;
-            --transition-easing: ease-out;
+            --shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0px 4px 6px rgba(0, 0, 0, 0.6);
+            --shadow-lg: 0px 10px 15px rgba(0, 0, 0, 0.8);
+            --shadow-inset: inset 0px 1px 3px rgba(0, 0, 0, 0.6);
         }
 
         /* Base Styles */
-        *, *::before, *::after {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -119,19 +106,16 @@
 
         body {
             font-family: var(--font-family-body);
-            font-size: var(--body-regular-font-size);
-            line-height: var(--body-line-height);
-            color: var(--color-text-primary);
             background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: var(--line-height-body);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden; /* Prevent horizontal scroll from animations */
         }
 
         a {
-            color: inherit;
+            color: var(--color-text);
             text-decoration: none;
-            transition: color var(--transition-duration) var(--transition-easing);
         }
 
         a:hover {
@@ -140,231 +124,100 @@
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-family-headings);
-            color: var(--color-text-primary);
-            line-height: var(--h1-line-height); /* Default line-height for headings */
+            color: var(--color-text);
+            font-weight: var(--font-weight-bold);
         }
 
-        h1 {
-            font-size: var(--h1-font-size-mobile);
-            font-weight: var(--h1-font-weight);
-            line-height: var(--h1-line-height);
-        }
-
-        h2 {
-            font-size: var(--h2-font-size-mobile);
-            font-weight: var(--h2-font-weight);
-            line-height: var(--h2-line-height);
-        }
-
-        h3 {
-            font-size: var(--h3-font-size-mobile);
-            font-weight: var(--h3-font-weight);
-            line-height: var(--h3-line-height);
-        }
-
-        h4 {
-            font-size: var(--h4-font-size-mobile);
-            font-weight: var(--h4-font-weight);
-            line-height: var(--h4-line-height);
-        }
+        h1 { font-size: var(--font-size-h1); line-height: var(--line-height-h1); }
+        h2 { font-size: var(--font-size-h2); line-height: var(--line-height-h2); }
+        h3 { font-size: var(--font-size-h3); line-height: var(--line-height-h3); }
+        h4 { font-size: var(--font-size-h4); line-height: var(--line-height-h4); }
+        h5 { font-size: var(--font-size-h5); line-height: var(--line-height-h5); }
+        h6 { font-size: var(--font-size-h6); line-height: var(--line-height-h6); }
 
         p {
-            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-body);
+            line-height: var(--line-height-body);
+            color: var(--color-text-secondary);
         }
 
-        /* Utility Classes */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 var(--spacing-md);
         }
 
+        /* Utility Classes */
         .text-center { text-align: center; }
         .text-primary { color: var(--color-primary); }
-        .text-secondary { color: var(--color-secondary); }
         .text-accent { color: var(--color-accent); }
+        .text-success { color: var(--color-success); }
+        .text-error { color: var(--color-error); }
+        .text-secondary { color: var(--color-text-secondary); }
 
-        .mb-sm { margin-bottom: var(--spacing-sm); }
-        .mb-md { margin-bottom: var(--spacing-md); }
-        .mb-lg { margin-bottom: var(--spacing-lg); }
-        .mb-xl { margin-bottom: var(--spacing-xl); }
-
-        .py-xl { padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl); }
-        .py-xxl { padding-top: var(--spacing-xxl); padding-bottom: var(--spacing-xxl); }
-
-        .grid {
-            display: grid;
-            gap: var(--spacing-lg);
-        }
-
-        .flex {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .flex-col { flex-direction: column; }
-        .justify-between { justify-content: space-between; }
-        .items-center { align-items: center; }
-
-        /* Gradient Text */
-        .gradient-text {
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent; /* Fallback for browsers that don't support background-clip: text */
-        }
-
-        /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: var(--spacing-md) var(--spacing-lg);
-            border-radius: var(--border-radius-md);
-            font-family: var(--font-family-headings);
-            font-weight: var(--h4-font-weight);
-            font-size: var(--body-regular-font-size);
+            border-radius: var(--border-radius-default);
+            font-size: var(--font-size-body-large);
+            font-weight: var(--font-weight-semi-bold);
             cursor: pointer;
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
             border: none;
-            transition: all var(--transition-duration) var(--transition-easing);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
         }
 
         .btn-primary {
             background-color: var(--color-primary);
-            color: var(--color-background);
-            box-shadow: var(--shadow-md);
+            color: var(--color-text);
+            box-shadow: 0px 4px 6px rgba(163, 0, 98, 0.4);
         }
 
         .btn-primary:hover {
-            background-color: #E62ECC; /* Slightly darker magenta */
-            box-shadow: var(--shadow-magenta-glow);
-            transform: translateY(-2px) scale(1.02);
-        }
-
-        .btn-primary:active {
-            transform: translateY(0) scale(0.98);
-            box-shadow: var(--shadow-sm);
+            background-color: #C20075; /* Darker primary */
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 8px rgba(163, 0, 98, 0.6);
         }
 
         .btn-secondary {
-            background-color: var(--color-secondary);
-            color: var(--color-background);
-            box-shadow: var(--shadow-md);
+            background-color: transparent;
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: none;
         }
 
         .btn-secondary:hover {
-            background-color: #2EB8E6; /* Slightly darker blue */
-            box-shadow: var(--shadow-magenta-glow);
-            transform: translateY(-2px) scale(1.02);
-        }
-
-        .btn-secondary:active {
-            transform: translateY(0) scale(0.98);
-            box-shadow: var(--shadow-sm);
+            background-color: rgba(163, 0, 98, 0.1);
+            transform: translateY(-2px);
         }
 
         /* Section Styling */
         section {
-            position: relative;
-            overflow: hidden;
             padding: var(--spacing-xl) 0;
+            position: relative;
+            overflow: hidden; /* For scroll reveal */
         }
 
-        section:not(:first-of-type) {
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        section:not(#hero) {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
 
-        section h2 {
-            text-align: center;
-            margin-bottom: var(--spacing-xl);
-        }
-
-        /* Background Grid/Dot Pattern Overlay */
-        section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(circle, rgba(255,255,255,0.02) 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.5;
-            z-index: 0;
-            pointer-events: none;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); box-shadow: var(--shadow-md); }
-            50% { transform: scale(1.02); box-shadow: var(--shadow-magenta-glow); }
-            100% { transform: scale(1); box-shadow: var(--shadow-md); }
-        }
-
-        @keyframes heroHeadlineFadeIn {
-            from { opacity: 0; transform: translateY(20px) scale(0.98); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-
-        @keyframes heroCtaPulse {
-            0% { transform: scale(1); box-shadow: var(--shadow-md); }
-            50% { transform: scale(1.01); box-shadow: 0px 0px 10px rgba(255, 51, 255, 0.5); }
-            100% { transform: scale(1); box-shadow: var(--shadow-md); }
-        }
-
-        @keyframes backgroundGradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        @keyframes dataFlow {
-            0% {
-                transform: translate(0, 0) scale(0.5);
-                opacity: 0;
-            }
-            25% {
-                transform: translate(20px, -20px) scale(0.7);
-                opacity: 0.8;
-                box-shadow: 0 0 10px var(--color-primary);
-            }
-            50% {
-                transform: translate(40px, 0px) scale(0.9);
-                opacity: 0.6;
-                box-shadow: 0 0 15px var(--color-secondary);
-            }
-            75% {
-                transform: translate(60px, 20px) scale(0.7);
-                opacity: 0.4;
-                box-shadow: 0 0 10px var(--color-primary);
-            }
-            100% {
-                transform: translate(80px, 0) scale(0.5);
-                opacity: 0;
-            }
+        section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Header */
         .header {
-            position: fixed;
+            background-color: var(--color-background);
+            padding: var(--spacing-md) 0;
+            position: sticky;
             top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(26, 26, 26, 0.8); /* Semi-transparent background */
-            backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: var(--spacing-md) var(--spacing-md);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid var(--color-surface);
         }
 
         .header .container {
@@ -374,698 +227,354 @@
         }
 
         .logo {
-            font-family: var(--font-family-headings);
-            font-size: var(--h3-font-size-mobile);
-            font-weight: var(--h3-font-weight);
+            font-size: var(--font-size-h4);
+            font-weight: var(--font-weight-bold);
             color: var(--color-primary);
-            letter-spacing: -0.5px;
-            transition: transform var(--transition-duration) var(--transition-easing);
         }
 
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .nav-menu {
-            display: flex;
+        .nav-list {
             list-style: none;
-        }
-
-        .nav-menu li {
-            margin-left: var(--spacing-lg);
-        }
-
-        .nav-menu a {
-            color: var(--color-text-primary);
-            font-weight: var(--body-font-weight);
-            position: relative;
-            padding: var(--spacing-sm) 0;
-        }
-
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            transition: width var(--transition-duration) var(--transition-easing);
-        }
-
-        .nav-menu a:hover::after,
-        .nav-menu a.active::after {
-            width: 100%;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 20px;
-            cursor: pointer;
-            z-index: 1001;
-        }
-
-        .hamburger span {
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: var(--color-primary);
-            transition: all var(--transition-duration) var(--transition-easing);
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
-
-        /* Mobile Nav Menu */
-        .mobile-nav-menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-background);
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transform: translateX(100%);
-            transition: transform var(--transition-duration) var(--transition-easing);
-            z-index: 999;
-            list-style: none;
-            padding-top: var(--spacing-xxl);
+            gap: var(--spacing-lg);
         }
 
-        .mobile-nav-menu.active {
-            transform: translateX(0);
+        .nav-list a {
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+            transition: color 0.2s ease-in-out;
         }
 
-        .mobile-nav-menu li {
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .mobile-nav-menu a {
-            font-size: var(--h3-font-size-mobile);
-            font-weight: var(--h3-font-weight);
-            color: var(--color-text-primary);
-            transition: color var(--transition-duration) var(--transition-easing);
-        }
-
-        .mobile-nav-menu a:hover {
+        .nav-list a:hover {
             color: var(--color-primary);
         }
 
         /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
+        #hero {
+            background: url('hero-bg.png') center/cover no-repeat;
+            background-color: var(--color-background); /* Fallback */
+            padding: var(--spacing-xxl) 0;
+            min-height: 80vh;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
+            position: relative;
             overflow: hidden;
-            background: linear-gradient(45deg, #1A1A1A, #2A1A2A, #1A1A1A); /* Base gradient */
-            background-size: 400% 400%;
-            animation: backgroundGradientShift 15s ease infinite;
+            opacity: 0; /* Initial state for hero animation */
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
-        .hero::before {
+        #hero.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 20% 80%, rgba(255, 51, 255, 0.15) 0%, transparent 40%),
-                        radial-gradient(circle at 80% 20%, rgba(51, 204, 255, 0.15) 0%, transparent 40%);
-            animation: backgroundGradientShift 20s ease-in-out infinite alternate;
-            opacity: 0.7;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.9));
             z-index: 1;
         }
 
-        .hero-content {
+        #hero .container {
             position: relative;
             z-index: 2;
             max-width: 800px;
-            padding: var(--spacing-md);
         }
 
-        .hero h1 {
-            font-size: var(--h1-font-size-mobile);
-            font-weight: var(--h1-font-weight);
+        #hero h1 {
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-text);
             margin-bottom: var(--spacing-md);
-            animation: heroHeadlineFadeIn 1s var(--transition-easing) forwards;
-            animation-delay: 0.5s;
-            opacity: 0; /* Start hidden */
         }
 
-        .hero p {
-            font-size: var(--body-large-font-size);
+        #hero p {
+            font-size: var(--font-size-body-large);
             color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-lg);
-            animation: fadeIn 1s var(--transition-easing) forwards;
-            animation-delay: 0.8s;
-            opacity: 0; /* Start hidden */
+            margin-bottom: var(--spacing-xl);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .hero .btn-primary {
-            animation: heroCtaPulse 2s infinite ease-in-out, fadeIn 1s var(--transition-easing) forwards;
-            animation-delay: 1.2s;
-            opacity: 0; /* Start hidden */
+        .hero-cta-group {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
         }
-
-        /* Unique Animated Visual Element: Data Flow */
-        .data-flow-point {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: var(--border-radius-full);
-            background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
-            opacity: 0;
-            z-index: 0;
-            animation: dataFlow 8s infinite ease-in-out;
-        }
-        .data-flow-point:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
-        .data-flow-point:nth-child(2) { top: 30%; left: 80%; animation-delay: 1.5s; }
-        .data-flow-point:nth-child(3) { top: 60%; left: 30%; animation-delay: 3s; }
-        .data-flow-point:nth-child(4) { top: 80%; left: 65%; animation-delay: 4.5s; }
-        .data-flow-point:nth-child(5) { top: 5%; left: 50%; animation-delay: 6s; }
-
 
         /* Features Section */
+        #features {
+            background-color: var(--color-background);
+            padding-top: var(--spacing-xl);
+            padding-bottom: var(--spacing-xl);
+        }
+
+        #features h2 {
+            margin-bottom: var(--spacing-xl);
+            text-align: center;
+        }
+
         .features-grid {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: var(--spacing-lg);
         }
 
         .feature-card {
             background-color: var(--color-surface);
-            border-radius: var(--border-radius-md);
             padding: var(--spacing-lg);
-            text-align: center;
-            transition: all var(--transition-duration) var(--transition-easing);
+            border-radius: var(--border-radius-default);
             box-shadow: var(--shadow-sm);
-            opacity: 0;
-            transform: translateY(20px);
+            text-align: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .feature-card:hover {
-            transform: translateY(-5px) scale(1.01);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-md);
-            border: 1px solid var(--color-primary);
         }
 
-        .feature-card-icon {
-            font-size: 48px;
-            color: var(--color-primary);
+        .feature-card .icon {
+            color: var(--color-accent); /* Accent color for icons */
+            font-size: 48px; /* SVG size */
             margin-bottom: var(--spacing-md);
-            transition: color var(--transition-duration) var(--transition-easing), transform var(--transition-duration) var(--transition-easing);
+            width: 48px; /* Explicit width for SVG */
+            height: 48px; /* Explicit height for SVG */
         }
 
-        .feature-card:hover .feature-card-icon {
-            color: var(--color-secondary);
-            transform: scale(1.1);
-        }
-
-        .feature-card h3 {
-            font-size: var(--h4-font-size-mobile);
+        .feature-card h4 {
+            font-size: var(--font-size-h4);
+            font-weight: var(--font-weight-semi-bold);
             margin-bottom: var(--spacing-sm);
+            color: var(--color-text);
         }
 
         .feature-card p {
-            font-size: var(--body-small-font-size);
-            color: var(--color-text-secondary);
-        }
-
-        /* Stats Section (Glassmorphism) */
-        .stats-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .stat-card {
-            background: rgba(42, 42, 42, 0.6); /* Semi-transparent surface */
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: var(--border-radius-lg);
-            padding: var(--spacing-lg);
-            text-align: center;
-            box-shadow: var(--shadow-md);
-            transition: all var(--transition-duration) var(--transition-easing);
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .stat-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: var(--shadow-magenta-glow);
-        }
-
-        .stat-card .number {
-            font-family: var(--font-family-headings);
-            font-size: var(--h2-font-size-mobile);
-            font-weight: var(--h2-font-weight);
-            color: var(--color-primary);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .stat-card .label {
-            font-size: var(--body-regular-font-size);
+            font-size: var(--font-size-body);
             color: var(--color-text-secondary);
         }
 
         /* Pricing Section */
-        .pricing-toggle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        #pricing {
+            background-color: var(--color-background);
+            padding-top: var(--spacing-xl);
+            padding-bottom: var(--spacing-xl);
+        }
+
+        #pricing h2 {
             margin-bottom: var(--spacing-xl);
-            background-color: var(--color-surface);
-            border-radius: var(--border-radius-full);
-            padding: var(--spacing-xs);
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .pricing-toggle-btn {
-            padding: var(--spacing-sm) var(--spacing-md);
-            border-radius: var(--border-radius-full);
-            background-color: transparent;
-            color: var(--color-text-secondary);
-            font-family: var(--font-family-body);
-            font-size: var(--body-small-font-size);
-            font-weight: var(--body-font-weight);
-            border: none;
-            cursor: pointer;
-            transition: all var(--transition-duration) var(--transition-easing);
-            position: relative;
-            z-index: 1;
-        }
-
-        .pricing-toggle-btn.active {
-            color: var(--color-background);
-            font-weight: var(--h4-font-weight);
-        }
-
-        .pricing-toggle-slider {
-            position: absolute;
-            height: calc(100% - var(--spacing-xs) * 2);
-            width: calc(50% - var(--spacing-xs));
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-            border-radius: var(--border-radius-full);
-            transition: transform var(--transition-duration) var(--transition-easing);
-            z-index: 0;
-        }
-
-        .pricing-toggle-slider.annual {
-            transform: translateX(100%);
+            text-align: center;
         }
 
         .pricing-grid {
-            grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: var(--spacing-lg);
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .pricing-card {
             background-color: var(--color-surface);
-            border-radius: var(--border-radius-lg);
             padding: var(--spacing-lg);
-            text-align: center;
+            border-radius: var(--border-radius-default);
             box-shadow: var(--shadow-md);
-            transition: all var(--transition-duration) var(--transition-easing);
-            border: 1px solid transparent;
-            opacity: 0;
-            transform: translateY(20px);
+            text-align: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
             display: flex;
             flex-direction: column;
+            position: relative; /* For badge positioning */
         }
 
         .pricing-card:hover {
-            transform: translateY(-5px) scale(1.02);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--color-primary);
         }
 
-        .pricing-card.popular {
-            background: linear-gradient(135deg, #3A1A3A, var(--color-surface));
-            border-color: var(--color-primary);
-            position: relative;
-            overflow: hidden;
-            animation: popularCardGlow 4s infinite ease-in-out alternate;
+        .pricing-card.highlighted {
+            border: 2px solid var(--color-primary);
+            background-color: var(--color-highlighted-plan-bg);
+            box-shadow: 0px 6px 10px rgba(163, 0, 98, 0.4);
         }
 
-        @keyframes popularCardGlow {
-            0% { box-shadow: var(--shadow-md), 0 0 10px rgba(255, 51, 255, 0.4); }
-            50% { box-shadow: var(--shadow-lg), 0 0 25px rgba(255, 51, 255, 0.8); }
-            100% { box-shadow: var(--shadow-md), 0 0 10px rgba(255, 51, 255, 0.4); }
-        }
-
-        .pricing-card .tag {
-            background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+        .pricing-card.highlighted .btn-primary {
+            background-color: var(--color-accent); /* Use accent for highlighted CTA */
             color: var(--color-background);
-            font-size: var(--caption-font-size);
-            font-weight: var(--body-font-weight);
-            padding: var(--spacing-xs) var(--spacing-sm);
-            border-radius: var(--border-radius-full);
-            position: absolute;
-            top: var(--spacing-md);
-            right: var(--spacing-md);
-            letter-spacing: 0.5px;
+            box-shadow: 0px 4px 6px rgba(0, 255, 255, 0.4);
+        }
+
+        .pricing-card.highlighted .btn-primary:hover {
+            background-color: #00E0E0; /* Slightly darker accent */
+            box-shadow: 0px 6px 8px rgba(0, 255, 255, 0.6);
         }
 
         .pricing-card h3 {
-            font-size: var(--h3-font-size-mobile);
+            font-size: var(--font-size-h3);
+            font-weight: var(--font-weight-bold);
             margin-bottom: var(--spacing-sm);
+            color: var(--color-text);
         }
 
         .pricing-card .price {
-            font-family: var(--font-family-headings);
-            font-size: var(--h1-font-size-mobile);
-            font-weight: var(--h1-font-weight);
+            font-size: var(--font-size-h1);
+            font-weight: var(--font-weight-bold);
             color: var(--color-primary);
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
             display: flex;
             align-items: baseline;
             justify-content: center;
         }
 
         .pricing-card .price span {
-            font-size: var(--body-regular-font-size);
+            font-size: var(--font-size-small);
             color: var(--color-text-secondary);
             margin-left: var(--spacing-xs);
+            font-weight: var(--font-weight-regular);
+        }
+
+        .pricing-card .plan-description {
+            font-size: var(--font-size-small);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1; /* Push button to bottom */
         }
 
         .pricing-card .features-list {
             list-style: none;
-            text-align: left;
             margin-bottom: var(--spacing-lg);
+            text-align: left;
             flex-grow: 1;
         }
 
         .pricing-card .features-list li {
-            font-size: var(--body-regular-font-size);
-            color: var(--color-text-primary);
+            font-size: var(--font-size-body);
+            color: var(--color-text);
             margin-bottom: var(--spacing-sm);
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align icon and text at top */
         }
 
-        .pricing-card .features-list li::before {
-            content: '✓';
-            color: var(--color-accent);
+        .pricing-card .features-list li svg {
+            color: var(--color-success);
             margin-right: var(--spacing-sm);
-            font-weight: var(--h4-font-weight);
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
         }
 
         .pricing-card .btn {
             width: 100%;
-            margin-top: auto; /* Push button to bottom */
-        }
-
-        /* Testimonials Section */
-        .testimonials-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .testimonial-card {
-            background-color: var(--color-surface);
-            border-radius: var(--border-radius-md);
-            padding: var(--spacing-lg);
-            box-shadow: var(--shadow-sm);
-            transition: all var(--transition-duration) var(--transition-easing);
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px) scale(1.01);
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--color-secondary);
-        }
-
-        .testimonial-card .quote {
-            font-size: var(--body-large-font-size);
-            font-style: italic;
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            margin-top: var(--spacing-md);
-        }
-
-        .testimonial-author img {
-            width: 60px;
-            height: 60px;
-            border-radius: var(--border-radius-full);
-            border: 2px solid var(--color-primary);
-            margin-right: var(--spacing-md);
-            object-fit: cover;
-        }
-
-        .testimonial-author-info .name {
-            font-weight: var(--h4-font-weight);
-            font-size: var(--body-regular-font-size);
-            color: var(--color-text-primary);
-        }
-
-        .testimonial-author-info .title {
-            font-size: var(--body-small-font-size);
-            color: var(--color-text-secondary);
-        }
-
-        /* Contact Section */
-        .contact-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .contact-form {
-            background-color: var(--color-surface);
-            border-radius: var(--border-radius-lg);
-            padding: var(--spacing-lg);
-            box-shadow: var(--shadow-md);
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .contact-form label {
-            display: block;
-            font-size: var(--body-small-font-size);
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: var(--spacing-md);
-            margin-bottom: var(--spacing-md);
-            background-color: var(--color-background);
-            border: 1px solid #444444;
-            border-radius: var(--border-radius-sm);
-            color: var(--color-text-primary);
-            font-family: var(--font-family-body);
-            font-size: var(--body-regular-font-size);
-            transition: border-color var(--transition-duration) var(--transition-easing), box-shadow var(--transition-duration) var(--transition-easing);
-        }
-
-        .contact-form input::placeholder,
-        .contact-form textarea::placeholder {
-            color: var(--color-text-secondary);
-            opacity: 0.7;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            outline: none;
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 3px rgba(255, 51, 255, 0.3);
-        }
-
-        .contact-info {
-            padding: var(--spacing-lg);
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .contact-info h3 {
-            font-size: var(--h4-font-size-mobile);
-            margin-bottom: var(--spacing-md);
-        }
-
-        .contact-info p {
-            font-size: var(--body-regular-font-size);
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .contact-info a {
-            color: var(--color-secondary);
-        }
-
-        /* FAQ Section */
-        .faq-accordion {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .accordion-item {
-            background-color: var(--color-surface);
-            border-radius: var(--border-radius-md);
-            margin-bottom: var(--spacing-md);
-            box-shadow: var(--shadow-sm);
-            overflow: hidden;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .accordion-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: var(--spacing-md) var(--spacing-lg);
-            cursor: pointer;
-            font-size: var(--h4-font-size-mobile);
-            font-weight: var(--h4-font-weight);
-            color: var(--color-text-primary);
-            transition: background-color var(--transition-duration) var(--transition-easing);
+            font-size: var(--font-size-body);
         }
 
-        .accordion-header:hover {
-            background-color: rgba(255, 51, 255, 0.1);
-        }
-
-        .accordion-header .icon {
-            font-size: 24px;
-            color: var(--color-primary);
-            transition: transform var(--transition-duration) var(--transition-easing);
-        }
-
-        .accordion-item.active .accordion-header .icon {
-            transform: rotate(45deg);
-        }
-
-        .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height var(--transition-duration) ease-in-out;
-            padding: 0 var(--spacing-lg);
-        }
-
-        .accordion-item.active .accordion-content {
-            max-height: 200px; /* Adjust as needed for content */
-            padding-bottom: var(--spacing-md);
-        }
-
-        .accordion-content p {
-            font-size: var(--body-regular-font-size);
-            color: var(--color-text-secondary);
+        .popular-badge {
+            background-color: var(--color-accent);
+            color: var(--color-background);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius-default);
+            font-size: var(--font-size-extra-small);
+            font-weight: var(--font-weight-bold);
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            z-index: 1;
         }
 
         /* Footer */
         .footer {
-            background-color: var(--color-surface);
-            padding: var(--spacing-xl) 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-grid {
-            grid-template-columns: 1fr;
+            background-color: var(--color-footer-bg);
+            padding: var(--spacing-lg) 0;
             text-align: center;
+            border-top: 1px solid var(--color-surface);
         }
 
-        .footer-col h4 {
-            font-size: var(--h4-font-size-mobile);
-            margin-bottom: var(--spacing-md);
-            color: var(--color-primary);
-        }
-
-        .footer-col ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-col li {
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .footer-col a {
-            font-size: var(--body-small-font-size);
-            color: var(--color-text-secondary);
-        }
-
-        .footer-col a:hover {
-            color: var(--color-primary);
-            transform: translateX(5px);
-        }
-
-        .social-links {
+        .footer .container {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: var(--spacing-md);
-            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
         }
 
-        .social-links a {
-            font-size: 24px;
+        .footer-links a {
             color: var(--color-text-secondary);
-            transition: all var(--transition-duration) var(--transition-easing);
+            font-size: var(--font-size-small);
+            transition: color 0.2s ease-in-out;
         }
 
-        .social-links a:hover {
+        .footer-links a:hover {
             color: var(--color-primary);
-            transform: scale(1.2);
+            text-decoration: underline;
         }
 
-        .footer-bottom {
-            margin-top: var(--spacing-xl);
-            padding-top: var(--spacing-md);
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
-            font-size: var(--body-small-font-size);
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .social-icons a {
+            color: var(--color-text-secondary);
+            font-size: 24px;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: var(--color-primary);
+        }
+
+        .copyright {
+            font-size: var(--font-size-small);
             color: var(--color-text-secondary);
         }
 
-        /* Responsive Breakpoints */
-        @media (min-width: 768px) { /* Tablet */
-            h1 { font-size: var(--h1-font-size-tablet); }
-            h2 { font-size: var(--h2-font-size-tablet); }
-            h3 { font-size: var(--h3-font-size-tablet); }
-            h4 { font-size: var(--h4-font-size-tablet); }
-
+        /* Responsive Design */
+        /* Tablet */
+        @media (min-width: 768px) {
             .container {
                 padding: 0 var(--spacing-lg);
             }
 
-            .hamburger {
-                display: none;
+            h1 { font-size: 60px; } /* Larger H1 on tablet/desktop */
+            h2 { font-size: 44px; }
+            h3 { font-size: 32px; }
+            h4 { font-size: 28px; }
+
+            .header .container {
+                flex-direction: row;
             }
 
-            .nav-menu {
-                display: flex;
+            .nav-list {
+                gap: var(--spacing-xl);
             }
 
-            .mobile-nav-menu {
-                display: none;
+            #hero {
+                min-height: 90vh;
+            }
+
+            #hero h1 {
+                font-size: 60px;
             }
 
             .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
@@ -1073,65 +582,35 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .footer .container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-                text-align: left;
-            }
-
-            .social-links {
-                justify-content: flex-start;
+            .footer-links {
+                margin-bottom: 0;
             }
         }
 
-        @media (min-width: 1024px) { /* Desktop */
-            h1 { font-size: var(--h1-font-size-desktop); }
-            h2 { font-size: var(--h2-font-size-desktop); }
-            h3 { font-size: var(--h3-font-size-desktop); }
-            h4 { font-size: var(--h4-font-size-desktop); }
-
-            .container {
-                padding: 0 var(--spacing-xl);
-            }
+        /* Desktop */
+        @media (min-width: 1024px) {
+            h1 { font-size: 72px; } /* Even larger H1 on desktop */
+            h2 { font-size: 56px; }
+            h3 { font-size: 40px; }
+            h4 { font-size: 32px; }
 
             .features-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-
             .pricing-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-
-            .testimonials-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
         }
 
-        /* Prefers Reduced Motion */
+        /* prefers-reduced-motion */
         @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
-
             * {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
@@ -1139,50 +618,19 @@
                 scroll-behavior: auto !important;
             }
 
-            .hero::before, .data-flow-point {
-                display: none; /* Remove complex background animations */
+            section:not(#hero) {
+                opacity: 1;
+                transform: translateY(0);
             }
-        }
 
-        /* Print Stylesheet */
-        @media print {
-            body {
-                background-color: #fff;
-                color: #000;
+            #hero {
+                opacity: 1;
+                transform: translateY(0);
             }
-            header, footer, .hero::before, .data-flow-point, .hamburger, .mobile-nav-menu, .pricing-toggle {
-                display: none !important;
-            }
-            .header, .footer, section::before {
-                display: none;
-            }
-            .container {
-                width: 100%;
-                max-width: none;
-                padding: 0;
-            }
-            h1, h2, h3, h4 {
-                color: #000;
-                page-break-after: avoid;
-            }
-            a {
-                color: #007bff;
-                text-decoration: underline;
-            }
-            .btn {
-                display: none;
-            }
-            .feature-card, .stat-card, .pricing-card, .testimonial-card, .contact-form, .accordion-item {
-                border: 1px solid #ccc;
+
+            .btn:hover, .feature-card:hover, .pricing-card:hover {
+                transform: none;
                 box-shadow: none;
-                background-color: #f9f9f9;
-                page-break-inside: avoid;
-            }
-            .pricing-card.popular {
-                background: #e0e0e0;
-            }
-            .accordion-content {
-                max-height: none !important; /* Ensure all content is visible */
             }
         }
     </style>
@@ -1190,281 +638,110 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">Trader's Log</a>
+            <a href="#" class="logo">Trading<span class="text-primary">Journal</span></a>
             <nav>
-                <ul class="nav-menu">
-                    <li><a href="#hero" class="active">Home</a></li>
+                <ul class="nav-list">
                     <li><a href="#features">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
-                <div class="hamburger" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
         </div>
     </header>
 
-    <nav class="mobile-nav-menu">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </nav>
-
     <main>
-        <section id="hero" class="hero">
-            <div class="data-flow-point"></div>
-            <div class="data-flow-point"></div>
-            <div class="data-flow-point"></div>
-            <div class="data-flow-point"></div>
-            <div class="data-flow-point"></div>
-            <div class="hero-content">
-                <h1 class="gradient-text">Master Your Trades, Maximize Your Profits.</h1>
-                <p>Unlock unparalleled insights into your trading performance. Trader's Log & Analysis provides the tools you need to track, learn, and consistently improve your strategy.</p>
-                <a href="#pricing" class="btn btn-primary">Start Your Free Trial</a>
+        <section id="hero">
+            <div class="container">
+                <h1>Stop Trading Blind. Pinpoint Your Profit Leaks.</h1>
+                <p>Finally see what's truly working and what's costing you money. Advanced analytics and backtesting built for active daytraders.</p>
+                <div class="hero-cta-group">
+                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
             </div>
         </section>
 
-        <section id="features" class="py-xxl">
+        <section id="features">
             <div class="container">
-                <h2 class="gradient-text">Powerful Features for Serious Traders</h2>
-                <div class="features-grid grid">
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">📊</div>
-                        <h3>Advanced Analytics</h3>
-                        <p>Dive deep into your trading data with customizable charts, performance metrics, and insightful reports to identify winning patterns and costly mistakes.</p>
+                <h2 class="text-center">Discover What Drives Your Edge</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-2M18 20v-4M3 3h18v18H3zM8 10l4-4 4 4"/></svg>
+                        <h4>Win-Rate Breakdown by Setup</h4>
+                        <p>See which of your 12 strategies actually makes money, and which ones you should stop trading tomorrow. No more guessing.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">✍️</div>
-                        <h3>Intuitive Trade Journaling</h3>
-                        <p>Effortlessly log every trade with detailed notes, screenshots, and custom tags. Build a comprehensive history for future review and learning.</p>
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12H3M18 5l3 7-3 7M6 5l-3 7 3 7"/></svg>
+                        <h4>Time-of-Day Profitability</h4>
+                        <p>Identify your most profitable trading hours and avoid the periods where you consistently lose. Optimize your schedule for peak performance.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">🎯</div>
-                        <h3>Strategy Optimization</h3>
-                        <p>Test and refine your trading strategies with backtesting capabilities and scenario analysis. Understand what works and why, before risking capital.</p>
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-2M18 20v-4M3 3h18v18H3zM8 10l4-4 4 4"/></svg>
+                        <h4>Ticker-Specific Performance</h4>
+                        <p>Understand exactly which stocks, futures, or crypto pairs align with your strategy and which ones are just noise. Focus your capital wisely.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">📈</div>
-                        <h3>Real-time Performance Tracking</h3>
-                        <p>Monitor your portfolio's health and individual trade progress in real-time. Stay informed with live updates and customizable dashboards.</p>
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-2M18 20v-4M3 3h18v18H3zM8 10l4-4 4 4"/></svg>
+                        <h4>Automated Backtesting</h4>
+                        <p>Test new ideas against your historical data in minutes, not hours. Validate strategies before risking real capital.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">☁️</div>
-                        <h3>Secure Cloud Sync</h3>
-                        <p>Access your trading log from anywhere, on any device. Your data is securely stored and synchronized, ensuring you never miss a beat.</p>
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-2M18 20v-4M3 3h18v18H3zM8 10l4-4 4 4"/></svg>
+                        <h4>Risk Management Insights</h4>
+                        <p>Pinpoint if your position sizing or stop-loss placement is hindering your overall profitability. Make data-driven adjustments.</p>
                     </div>
-                    <div class="feature-card animate-on-scroll">
-                        <div class="feature-card-icon">🤖</div>
-                        <h3>AI-Powered Insights</h3>
-                        <p>Leverage machine learning to uncover hidden correlations and predictive trends in your trading behavior, giving you an edge.</p>
+                    <div class="feature-card">
+                        <svg class="icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20v-2M18 20v-4M3 3h18v18H3zM8 10l4-4 4 4"/></svg>
+                        <h4>Psychology Journaling</h4>
+                        <p>Connect your emotional state to trade outcomes. Discover patterns of overtrading or fear that impact your P&L.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="stats" class="py-xxl">
+        <section id="pricing">
             <div class="container">
-                <h2 class="gradient-text">Our Impact in Numbers</h2>
-                <div class="stats-grid grid">
-                    <div class="stat-card animate-on-scroll">
-                        <div class="number" data-target="847">0</div>
-                        <div class="label">Traders Empowered</div>
-                    </div>
-                    <div class="stat-card animate-on-scroll">
-                        <div class="number" data-target="125000">0</div>
-                        <div class="label">Trades Logged Monthly</div>
-                    </div>
-                    <div class="stat-card animate-on-scroll">
-                        <div class="number" data-target="99.8">0</div>
-                        <div class="label">Uptime Reliability (%)</div>
-                    </div>
-                    <div class="stat-card animate-on-scroll">
-                        <div class="number" data-target="23">0</div>
-                        <div class="label">Countries Supported</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing" class="py-xxl">
-            <div class="container">
-                <h2 class="gradient-text">Flexible Plans for Every Trader</h2>
-                <div class="pricing-toggle mb-lg">
-                    <div class="pricing-toggle-slider" id="pricing-slider"></div>
-                    <button class="pricing-toggle-btn active" data-period="monthly">Monthly</button>
-                    <button class="pricing-toggle-btn" data-period="annual">Annually (Save 20%)</button>
-                </div>
-
-                <div class="pricing-grid grid">
-                    <div class="pricing-card animate-on-scroll">
-                        <h3>Basic</h3>
-                        <div class="price">
-                            $<span data-monthly="19" data-annual="15">19</span><span>/month</span>
-                        </div>
+                <h2 class="text-center">Simple, Transparent Pricing</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Basic Trader</h3>
+                        <p class="plan-description">Get started with essential journaling and basic analytics.</p>
+                        <div class="price">$29<span>/month</span></div>
                         <ul class="features-list">
-                            <li>Up to 100 trades/month</li>
-                            <li>Standard analytics dashboard</li>
-                            <li>Basic journaling features</li>
-                            <li>Email support</li>
-                            <li>Cloud sync</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Up to 100 journal entries/month</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Basic P&L breakdown</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Standard email support</li>
                         </ul>
-                        <a href="#" class="btn btn-secondary">Get Started</a>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
                     </div>
 
-                    <div class="pricing-card popular animate-on-scroll">
-                        <span class="tag">Most Popular</span>
-                        <h3>Pro</h3>
-                        <div class="price">
-                            $<span data-monthly="49" data-annual="39">49</span><span>/month</span>
-                        </div>
+                    <div class="pricing-card highlighted">
+                        <span class="popular-badge">Most Popular</span>
+                        <h3>Pro Trader</h3>
+                        <p class="plan-description">Advanced insights for serious traders ready to scale.</p>
+                        <div class="price">$49<span>/month</span></div>
                         <ul class="features-list">
-                            <li>Unlimited trades</li>
-                            <li>Advanced analytics & reports</li>
-                            <li>Strategy optimization tools</li>
-                            <li>Priority email support</li>
-                            <li>Secure cloud sync</li>
-                            <li>Customizable dashboards</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Unlimited journal entries</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>P&L breakdown by ticker/strategy/timeframe</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Advanced backtesting simulations</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Priority email support</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>CSV + PDF export</li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Choose Pro</a>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
                     </div>
 
-                    <div class="pricing-card animate-on-scroll">
-                        <h3>Premium</h3>
-                        <div class="price">
-                            $<span data-monthly="99" data-annual="79">99</span><span>/month</span>
-                        </div>
+                    <div class="pricing-card">
+                        <h3>Elite Trader</h3>
+                        <p class="plan-description">Personalized support and maximum data depth for professionals.</p>
+                        <div class="price">$99<span>/month</span></div>
                         <ul class="features-list">
-                            <li>All Pro features</li>
-                            <li>AI-powered insights</li>
-                            <li>Dedicated account manager</li>
-                            <li>API access for custom integrations</li>
-                            <li>Early access to new features</li>
-                            <li>24/7 Phone & Chat Support</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>All Pro Trader features</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1-on-1 onboarding call</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Custom report generation</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Early access to new features</li>
                         </ul>
-                        <a href="#" class="btn btn-secondary">Go Premium</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="py-xxl">
-            <div class="container">
-                <h2 class="gradient-text">What Our Traders Say</h2>
-                <div class="testimonials-grid grid">
-                    <div class="testimonial-card animate-on-scroll">
-                        <p class="quote">"Trader's Log transformed my approach to trading. The analytics are incredibly powerful, helping me pinpoint exactly where I was going wrong. My profitability has seen a significant boost!"</p>
-                        <div class="testimonial-author">
-                            <img src="https://api.dicebear.com/7.x/personas/svg?seed=Marcus" alt="Marcus Weber Avatar" loading="lazy">
-                            <div class="testimonial-author-info">
-                                <div class="name">Marcus Weber</div>
-                                <div class="title">Independent Trader, Berlin</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card animate-on-scroll">
-                        <p class="quote">"The intuitive journaling system is a game-changer. I can quickly log trades and review them later, which has been crucial for refining my strategies. Highly recommend for serious traders."</p>
-                        <div class="testimonial-author">
-                            <img src="https://api.dicebear.com/7.x/personas/svg?seed=Sophia" alt="Sophia Chen Avatar" loading="lazy">
-                            <div class="testimonial-author-info">
-                                <div class="name">Sophia Chen</div>
-                                <div class="title">Forex Analyst, QuantFlow Inc.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card animate-on-scroll">
-                        <p class="quote">"I've tried many journaling tools, but Trader's Log stands out with its AI insights. It's like having a personal trading coach identifying patterns I'd never notice on my own."</p>
-                        <div class="testimonial-author">
-                            <img src="https://api.dicebear.com/7.x/personas/svg?seed=David" alt="David Lee Avatar" loading="lazy">
-                            <div class="testimonial-author-info">
-                                <div class="name">David Lee</div>
-                                <div class="title">Hedge Fund Manager, Apex Capital</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="py-xxl">
-            <div class="container">
-                <h2 class="gradient-text">Frequently Asked Questions</h2>
-                <div class="faq-accordion">
-                    <div class="accordion-item animate-on-scroll">
-                        <div class="accordion-header">
-                            <span>What types of assets can I log?</span>
-                            <span class="icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Trader's Log supports a wide range of assets including stocks, options, futures, forex, cryptocurrencies, and commodities. You can customize your entries to fit any market.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item animate-on-scroll">
-                        <div class="accordion-header">
-                            <span>Is my trading data secure?</span>
-                            <span class="icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Absolutely. We use industry-standard encryption and security protocols to protect your data. All information is stored on secure cloud servers with regular backups.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item animate-on-scroll">
-                        <div class="accordion-header">
-                            <span>Can I import my historical trades?</span>
-                            <span class="icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, our platform supports importing historical trade data via CSV files from most brokers. Our support team can assist you with the import process if needed.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item animate-on-scroll">
-                        <div class="accordion-header">
-                            <span>Do you offer a free trial?</span>
-                            <span class="icon">+</span>
-                        </div>
-                        <div class="accordion-content">
-                            <p>Yes, we offer a 14-day free trial for our Pro plan, no credit card required. This allows you to experience all the advanced features before committing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-xxl">
-            <div class="container">
-                <h2 class="gradient-text">Get in Touch</h2>
-                <div class="contact-grid grid">
-                    <div class="contact-form animate-on-scroll">
-                        <form action="#" method="POST">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
-
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
-
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
-
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                    <div class="contact-info animate-on-scroll">
-                        <h3>Contact Information</h3>
-                        <p>Have questions or need support? Reach out to us!</p>
-                        <p><strong>Email:</strong> <a href="mailto:support@traderslog.com">support@traderslog.com</a></p>
-                        <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                        <p><strong>Address:</strong> 123 Trading Lane, Suite 400, Financial City, FC 90210</p>
-                        <p class="mt-lg">We aim to respond to all inquiries within 24 hours.</p>
+                        <a href="#" class="btn btn-primary">Choose Plan</a>
                     </div>
                 </div>
             </div>
@@ -1473,208 +750,64 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid grid">
-                <div class="footer-col">
-                    <a href="#" class="logo mb-md" style="font-size: var(--h4-font-size-mobile);">Trader's Log</a>
-                    <p style="font-size: var(--body-small-font-size); color: var(--color-text-secondary);">Empowering traders with advanced analytics and journaling tools.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.594 0-6.494 2.901-6.494 6.492 0 .509.058 1.007.171 1.487-5.392-.27-10.187-2.855-13.387-6.795-.555.959-.875 2.078-.875 3.268 0 2.254 1.144 4.248 2.877 5.424-.847-.026-1.649-.258-2.35-.616v.08c0 3.154 2.238 5.787 5.197 6.392-.544.148-1.115.225-1.702.225-.418 0-.823-.041-1.22-.116.828 2.578 3.213 4.45 6.04 4.491-2.221 1.749-5.029 2.793-8.09 2.793-.525 0-1.04-.031-1.549-.091 2.887 1.855 6.307 2.934 9.981 2.934 11.973 0 18.539-9.912 18.539-18.541 0-.281-.006-.562-.019-.841.956-.693 1.787-1.56 2.457-2.549z"/></svg></a>
-                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                        <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.908c0-.817.092-1.192 1.171-1.192h2.829v-3h-3.975c-3.627 0-5.025 2.248-5.025 4.586v2.414z"/></svg></a>
-                    </div>
-                </div>
+            <div class="logo">Trading<span class="text-primary">Journal</span></div>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-17 12 2.9 2.2 7.5 1.6 10.6-.8.6-.2 1.1-.4 1.7-.7 1.4-1.2 2.5-2.7 3.2-4.4C20 11.2 21.2 7.5 22 4z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                </a>
             </div>
-            <div class="footer-bottom">
-                &copy; <span id="current-year"></span> Trader's Log & Analysis. All rights reserved.
-            </div>
+            <p class="copyright">&copy; 2023 TradingJournal. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Smooth Scroll & Active Nav Link
-            const navLinks = document.querySelectorAll('.nav-menu a, .mobile-nav-menu a');
-            const sections = document.querySelectorAll('section');
-            const header = document.querySelector('.header');
-            const mobileNavMenu = document.querySelector('.mobile-nav-menu');
-            const hamburger = document.querySelector('.hamburger');
-
-            const activateNavLink = (id) => {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${id}`) {
-                        link.classList.add('active');
-                    }
-                });
-            };
-
-            const onScroll = () => {
-                let currentActive = 'hero';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - header.offsetHeight - 1; // Adjust for fixed header
-                    if (window.scrollY >= sectionTop) {
-                        currentActive = section.id;
-                    }
-                });
-                activateNavLink(currentActive);
-            };
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-                    if (targetSection) {
-                        const offsetTop = targetSection.offsetTop - header.offsetHeight;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                        // Close mobile menu if open
-                        if (mobileNavMenu.classList.contains('active')) {
-                            mobileNavMenu.classList.remove('active');
-                            hamburger.classList.remove('active');
-                            document.body.style.overflow = '';
-                        }
-                    }
-                });
-            });
-
-            window.addEventListener('scroll', onScroll);
-            onScroll(); // Initial call to set active link on load
-
-            // Hamburger Menu
-            hamburger.addEventListener('click', () => {
-                mobileNavMenu.classList.toggle('active');
-                hamburger.classList.toggle('active');
-                document.body.style.overflow = mobileNavMenu.classList.contains('active') ? 'hidden' : '';
-            });
-
-            // Intersection Observer for Scroll Animations
-            const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
             const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+            if (!prefersReducedMotion) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
 
-            const observerCallback = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        if (!prefersReducedMotion) {
-                            entry.target.style.animation = 'fadeIn 0.6s var(--transition-easing) forwards';
-                        } else {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
+                const observerCallback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target); // Stop observing once visible
                         }
-                        observer.unobserve(entry.target);
-                    }
-                });
-            };
+                    });
+                };
 
-            const scrollObserver = new IntersectionObserver(observerCallback, observerOptions);
-            animateOnScrollElements.forEach(el => scrollObserver.observe(el));
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-            // Animated Counter Numbers
-            const counterElements = document.querySelectorAll('.stat-card .number');
-
-            const counterObserverCallback = (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const target = parseFloat(entry.target.dataset.target);
-                        let current = 0;
-                        const duration = 2000; // milliseconds
-                        const increment = target / (duration / 10); // Update every 10ms
-
-                        const updateCounter = () => {
-                            if (current < target) {
-                                current += increment;
-                                if (current > target) current = target; // Ensure it doesn't overshoot
-                                entry.target.textContent = target % 1 !== 0 ? current.toFixed(1) : Math.floor(current);
-                                requestAnimationFrame(updateCounter);
-                            } else {
-                                entry.target.textContent = target % 1 !== 0 ? target.toFixed(1) : target;
-                            }
-                        };
-                        updateCounter();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            };
-
-            const counterObserver = new IntersectionObserver(counterObserverCallback, observerOptions);
-            counterElements.forEach(el => counterObserver.observe(el));
-
-            // Pricing Toggle
-            const pricingToggle = document.querySelector('.pricing-toggle');
-            const monthlyBtn = pricingToggle.querySelector('[data-period="monthly"]');
-            const annualBtn = pricingToggle.querySelector('[data-period="annual"]');
-            const pricingSlider = document.getElementById('pricing-slider');
-            const priceSpans = document.querySelectorAll('.pricing-card .price span:first-child');
-
-            const updatePricing = (isAnnual) => {
-                priceSpans.forEach(span => {
-                    const monthlyPrice = span.dataset.monthly;
-                    const annualPrice = span.dataset.annual;
-                    span.textContent = isAnnual ? annualPrice : monthlyPrice;
+                // Observe sections (excluding hero, which has its own initial animation)
+                document.querySelectorAll('section:not(#hero)').forEach(section => {
+                    observer.observe(section);
                 });
 
-                if (isAnnual) {
-                    pricingSlider.classList.add('annual');
-                    annualBtn.classList.add('active');
-                    monthlyBtn.classList.remove('active');
-                } else {
-                    pricingSlider.classList.remove('annual');
-                    monthlyBtn.classList.add('active');
-                    annualBtn.classList.remove('active');
+                // Special handling for hero section to animate on load
+                const heroSection = document.getElementById('hero');
+                if (heroSection) {
+                    // Use a small timeout to ensure CSS is parsed and element is rendered before adding class
+                    setTimeout(() => {
+                        heroSection.classList.add('is-visible');
+                    }, 100);
                 }
-            };
-
-            monthlyBtn.addEventListener('click', () => updatePricing(false));
-            annualBtn.addEventListener('click', () => updatePricing(true));
-
-            // FAQ Accordion
-            const accordionHeaders = document.querySelectorAll('.accordion-header');
-
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', () => {
-                    const accordionItem = header.closest('.accordion-item');
-                    const accordionContent = accordionItem.querySelector('.accordion-content');
-
-                    accordionItem.classList.toggle('active');
-
-                    if (accordionItem.classList.contains('active')) {
-                        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-                    } else {
-                        accordionContent.style.maxHeight = '0';
-                    }
-                });
-            });
-
-            // Set current year in footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+            }
         });
     </script>
 </body>

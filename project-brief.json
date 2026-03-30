@@ -1,32 +1,29 @@
 {
   "project_name": "trading-journal-app",
-  "description": "A web application for traders to log, track, and analyze their trading activities, featuring a highly animated magenta-themed user interface.",
+  "description": "A trading journal application for active daytraders to improve their performance, featuring analytics and backtesting in a dark magenta style.",
   "type": "saas",
-  "style": "modern",
-  "color_scheme": "colorful",
+  "style": "dark",
+  "color_scheme": "dark",
   "sections": [
     "hero",
     "features",
     "pricing",
-    "testimonials",
-    "contact",
-    "faq",
     "footer"
   ],
   "features": [
-    "animations",
-    "responsive",
-    "seo",
-    "data-visualization",
-    "performance-tracking",
-    "journaling",
-    "analytics"
+    "trade-journaling",
+    "p&l-analytics",
+    "strategy-backtesting",
+    "win-rate-breakdown",
+    "user-authentication",
+    "subscription-management",
+    "responsive"
   ],
-  "target_audience": "Individual traders and investors seeking to improve their trading performance through detailed journaling and analytics.",
+  "target_audience": "Active daytraders who want to improve their performance.",
   "reference_urls": [
     "https://tradezella.com"
   ],
   "framework": "nextjs",
-  "original_prompt": "Baue mir eine Trading-Journal Seite mit viel animation im margenta style. Nehme inspiration auf Tradezella von den features und funktionen",
+  "original_prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics, Strategy Backtesting, Win-Rate Breakdown). Zielgruppe: aktive Daytrader die ihre Performance verbessern wollen. 3 Pricing Tiers.",
   "hero_image": "hero-bg.png"
 }
