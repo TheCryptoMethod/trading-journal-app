@@ -1,6 +1,6 @@
 {
   "project_name": "trading-journal-app",
-  "description": "A trading journal application for active daytraders, featuring analytics and backtesting capabilities in a dark magenta style.",
+  "description": "A trading journal application for active day traders, offering advanced analytics like P&L per strategy, win-rate breakdown, entry/exit timing analysis, and a backtesting engine.",
   "type": "saas",
   "style": "dark",
   "color_scheme": "dark",
@@ -8,21 +8,27 @@
     "hero",
     "features",
     "pricing",
+    "testimonials",
+    "faq",
     "footer"
   ],
   "features": [
     "trade-journaling",
-    "pnl-analytics-by-strategy",
-    "win-rate-breakdown",
-    "backtesting",
+    "pnl-analytics-per-strategy",
+    "win-rate-breakdown-per-setup",
+    "entry-exit-timing-analysis",
+    "backtesting-engine",
+    "free-trial-management",
+    "subscription-management",
     "responsive",
     "seo"
   ],
-  "target_audience": "Active daytraders looking to track and analyze their trades.",
+  "target_audience": "Futures and Crypto Daytraders making 5-20 trades per day.",
   "reference_urls": [
-    "https://www.tradezella.com"
+    "https://tradezella.com"
   ],
   "framework": "nextjs",
-  "original_prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics by Strategy, Win-Rate Breakdown, Backtesting). Zielgruppe: aktive Daytrader. 3 Pricing Tiers: Free, Pro 29/mo, Elite 79/mo.",
-  "hero_image": "hero-bg.png"
+  "original_prompt": "Trading Journal App fuer aktive Daytrader. Dunkler Magenta-Style. Inspiriert von Tradezella: Trade Journaling mit P&L Analytics per Strategy, Win-Rate Breakdown per Setup, Entry/Exit Timing Analysis, Backtesting Engine. Zielgruppe: Futures und Crypto Daytrader die 5-20 Trades pro Tag machen. Pricing: Free Trial, Pro 39/mo, Elite 89/mo.",
+  "hero_image": "hero-bg.png",
+  "product_mockup": "product-mockup.png"
 }

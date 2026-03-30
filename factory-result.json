@@ -1,8 +1,8 @@
 {
-  "prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics, Strategy Backtesting, Win-Rate Breakdown). Zielgruppe: aktive Daytrader die ihre Performance verbessern wollen. 3 Pricing Tiers.",
+  "prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics by Strategy, Win-Rate Breakdown, Backtesting). Zielgruppe: aktive Daytrader. 3 Pricing Tiers: Free, Pro 29/mo, Elite 79/mo.",
   "brief": {
     "project_name": "trading-journal-app",
-    "description": "A trading journal application for active daytraders to improve their performance, featuring analytics and backtesting in a dark magenta style.",
+    "description": "A trading journal application for active daytraders, featuring analytics and backtesting capabilities in a dark magenta style.",
     "type": "saas",
     "style": "dark",
     "color_scheme": "dark",
@@ -14,30 +14,27 @@
     ],
     "features": [
       "trade-journaling",
-      "p&l-analytics",
-      "strategy-backtesting",
+      "pnl-analytics-by-strategy",
       "win-rate-breakdown",
-      "user-authentication",
-      "subscription-management",
-      "responsive"
+      "backtesting",
+      "responsive",
+      "seo"
     ],
-    "target_audience": "Active daytraders who want to improve their performance.",
+    "target_audience": "Active daytraders looking to track and analyze their trades.",
     "reference_urls": [
-      "https://tradezella.com"
+      "https://www.tradezella.com"
     ],
     "framework": "nextjs",
-    "original_prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics, Strategy Backtesting, Win-Rate Breakdown). Zielgruppe: aktive Daytrader die ihre Performance verbessern wollen. 3 Pricing Tiers.",
+    "original_prompt": "Trading Journal App im dunklen Magenta-Style. Inspiration: Tradezella Features (Trade Journaling, P&L Analytics by Strategy, Win-Rate Breakdown, Backtesting). Zielgruppe: aktive Daytrader. 3 Pricing Tiers: Free, Pro 29/mo, Elite 79/mo.",
     "hero_image": "hero-bg.png"
   },
   "project_dir": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app",
   "qa": {
     "passed": true,
-    "score": 14,
+    "score": 18,
     "max_score": 15,
-    "issues": [
-      "No CSS animations \u2014 site feels static"
-    ],
-    "html_size": 33715,
+    "issues": [],
+    "html_size": 33307,
     "screenshots": {
       "desktop": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\screenshot-desktop.png",
       "scroll_shots": [
@@ -46,12 +43,11 @@
         "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\scroll-02.png",
         "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\scroll-03.png"
       ],
-      "hover": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\screenshot-hover.png",
-      "video": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\videos\\ef44ec8b36186806846fc672882234df.webm",
+      "video": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\videos\\366e79383454a7e51b1d96618e3b52be.webm",
       "mobile": "C:\\Visualstudios\\WebsiteFactory\\output\\trading-journal-app\\screenshot-mobile.png"
     }
   },
   "url": "https://thecryptomethod.github.io/trading-journal-app/",
-  "duration": 141.4,
-  "timestamp": "2026-03-31T00:23:26.698057"
+  "duration": 101.9,
+  "timestamp": "2026-03-31T00:34:17.221196"
 }
