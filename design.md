@@ -1,188 +1,169 @@
+```markdown
 # Design System for Trading Journal Application
 
-This document outlines the core design principles and specifications for the "Trading Journal" SaaS application. The goal is to create a professional, data-focused, and visually engaging experience for active daytraders, leveraging a dark aesthetic with a distinct magenta accent.
+This document outlines the core design principles and specifications for the "Trading Journal" SaaS application. It aims to provide a consistent and professional user experience, leveraging a dark magenta aesthetic suitable for active daytraders.
 
 ---
 
 ## 1. Color Palette
 
-A dark, sophisticated palette with a vibrant magenta primary color and a contrasting accent for key interactions and data visualization.
+The color palette is designed for a dark interface, prioritizing readability and a sophisticated feel, with magenta as the primary brand color.
 
-*   **Primary (Brand Magenta):** `#A30062`
-    *   *Usage:* Main branding, primary CTAs, active states, key data highlights.
-*   **Secondary (Deep Blue):** `#0062A3`
-    *   *Usage:* Complementary elements, secondary buttons, background for specific sections, charts.
-*   **Accent (Electric Cyan):** `#00FFFF`
-    *   *Usage:* Interactive elements, alerts, data points requiring high visibility, profit indicators.
-*   **Background (Dark Grey):** `#121212`
-    *   *Usage:* Main application background, card backgrounds, panels.
-*   **Surface (Slightly Lighter Dark Grey):** `#1E1E1E`
-    *   *Usage:* Card backgrounds, modal backgrounds, input fields.
-*   **Text (Light Grey):** `#E0E0E0`
-    *   *Usage:* Primary body text, labels.
-*   **Text Secondary (Muted Grey):** `#A0A0A0`
-    *   *Usage:* Secondary information, helper text, disabled states.
-*   **Success:** `#00C853`
-    *   *Usage:* Positive feedback, profit indicators.
-*   **Error:** `#D32F2F`
-    *   *Usage:* Negative feedback, loss indicators, error messages.
-*   **Warning:** `#FFC107`
-    *   *Usage:* Cautionary messages, neutral alerts.
+| Variable Name           | Hex Code    | Description                                   |
+| :---------------------- | :---------- | :-------------------------------------------- |
+| `--color-primary`       | `#AD1457`   | Deep Magenta (Brand primary)                  |
+| `--color-secondary`     | `#34495E`   | Dark Blue-Grey (Subtle contrast, secondary elements) |
+| `--color-accent`        | `#E91E63`   | Vibrant Magenta (CTAs, highlights, active states) |
+| `--color-background-main` | `#1A1A1A`   | Very Dark Grey (Main page background)         |
+| `--color-background-card` | `#212121`   | Slightly Lighter Dark Grey (Card, elevated elements) |
+| `--color-text-primary`  | `#E0E0E0`   | Light Grey (Main text, headings)              |
+| `--color-text-secondary`| `#B0B0B0`   | Muted Grey (Secondary text, descriptions)     |
+| `--color-success`       | `#4CAF50`   | Green (Positive feedback, profit)             |
+| `--color-error`         | `#F44336`   | Red (Negative feedback, loss)                 |
+| `--color-warning`       | `#FFC107`   | Amber (Warning, neutral alerts)               |
 
 ---
 
 ## 2. Typography
 
-A clean, modern sans-serif font for optimal readability across all content.
+The `Inter` font family is chosen for its modern, clean, and highly readable characteristics across various weights and sizes.
 
-*   **Headings Font:** `Inter` (or a suitable web-safe fallback like `sans-serif`)
-*   **Body Font:** `Inter` (or a suitable web-safe fallback like `sans-serif`)
+*   **Font Family**: `Inter`, sans-serif
+*   **Weights**: Regular (400), Medium (500), SemiBold (600), Bold (700)
 
-### Font Sizes
-
-*   **H1:** `48px` (Line-height: `1.2`)
-*   **H2:** `36px` (Line-height: `1.25`)
-*   **H3:** `28px` (Line-height: `1.3`)
-*   **H4:** `24px` (Line-height: `1.35`)
-*   **H5:** `20px` (Line-height: `1.4`)
-*   **H6:** `18px` (Line-height: `1.45`)
-*   **Body Large:** `18px` (Line-height: `1.5`)
-*   **Body:** `16px` (Line-height: `1.5`)
-*   **Small:** `14px` (Line-height: `1.6`)
-*   **Extra Small:** `12px` (Line-height: `1.6`)
-
-### Font Weights
-
-*   **Regular:** `400`
-*   **Medium:** `500`
-*   **Semi-Bold:** `600`
-*   **Bold:** `700`
+| Element           | Font Size (px) | Font Weight | Line Height (em) | Color (Default)     |
+| :---------------- | :------------- | :---------- | :--------------- | :------------------ |
+| `--font-size-h1`  | 48px           | Bold (700)  | 1.2              | `--color-text-primary` |
+| `--font-size-h2`  | 36px           | Bold (700)  | 1.2              | `--color-text-primary` |
+| `--font-size-h3`  | 28px           | SemiBold (600)| 1.3              | `--color-text-primary` |
+| `--font-size-h4`  | 24px           | SemiBold (600)| 1.3              | `--color-text-primary` |
+| `--font-size-h5`  | 20px           | Medium (500)| 1.4              | `--color-text-primary` |
+| `--font-size-h6`  | 18px           | Medium (500)| 1.4              | `--color-text-primary` |
+| `--font-size-body`| 16px           | Regular (400)| 1.5              | `--color-text-primary` |
+| `--font-size-small`| 14px           | Regular (400)| 1.5              | `--color-text-secondary` |
+| `--font-size-button`| 18px           | SemiBold (600)| 1              | `--color-text-primary` |
 
 ---
 
 ## 3. Spacing Scale
 
-A consistent 8px grid-based spacing system for all elements.
+A modular spacing scale based on an 8px grid system ensures consistent layout and visual hierarchy.
 
-*   **xs:** `4px`
-*   **sm:** `8px`
-*   **md:** `16px`
-*   **lg:** `32px`
-*   **xl:** `64px`
-*   **xxl:** `128px`
+| Variable Name     | Pixel Value |
+| :---------------- | :---------- |
+| `--spacing-xs`    | 8px         |
+| `--spacing-sm`    | 16px        |
+| `--spacing-md`    | 24px        |
+| `--spacing-lg`    | 40px        |
+| `--spacing-xl`    | 64px        |
+| `--spacing-xxl`   | 96px        |
 
 ---
 
 ## 4. Border Radius
 
-Subtle border radius for a modern, soft aesthetic.
+Subtle border radii are used to soften edges and improve visual appeal without appearing overly rounded.
 
-*   **Default:** `4px`
-*   **Pill (for tags/badges):** `9999px` (fully rounded)
+| Variable Name       | Pixel Value | Description                                |
+| :------------------ | :---------- | :----------------------------------------- |
+| `--border-radius-sm`| 4px         | Small elements (buttons, inputs)           |
+| `--border-radius-md`| 8px         | Medium elements (cards, containers)        |
+| `--border-radius-lg`| 12px        | Larger, prominent elements                 |
 
 ---
 
 ## 5. Shadow Styles
 
-Subtle, dark shadows to provide depth without overpowering the dark background.
+Shadows are used sparingly and subtly to provide depth and emphasize elevated elements on the dark background. The shadow color is a dark grey with varying opacity.
 
-*   **shadow-sm:** `0px 1px 3px rgba(0, 0, 0, 0.4)`
-*   **shadow-md:** `0px 4px 6px rgba(0, 0, 0, 0.6)`
-*   **shadow-lg:** `0px 10px 15px rgba(0, 0, 0, 0.8)`
-*   **shadow-inset (for subtle inner depth):** `inset 0px 1px 3px rgba(0, 0, 0, 0.6)`
+| Variable Name   | CSS Value                                 | Description                      |
+| :-------------- | :---------------------------------------- | :------------------------------- |
+| `--shadow-sm`   | `0 1px 3px rgba(0, 0, 0, 0.4)`            | Subtle lift (e.g., small buttons) |
+| `--shadow-md`   | `0 4px 8px rgba(0, 0, 0, 0.5)`            | Standard elevation (e.g., cards) |
+| `--shadow-lg`   | `0 10px 20px rgba(0, 0, 0, 0.6)`          | Prominent elevation (e.g., modals, hover states) |
 
 ---
 
-## 6. Component Specifications
+## 6. Component Specifications by Section
 
-### 6.1. Hero Section
+### Hero Section
 
-*   **Background:** `background-color: #121212;` (main dark background)
-*   **Headline (H1):** `font-size: 48px; font-weight: 700; color: #E0E0E0;`
-    *   *Content:* "Master Your Trades. Maximize Your Profits."
-*   **Subheadline (Body Large):** `font-size: 18px; font-weight: 400; color: #A0A0A0;`
-    *   *Content:* "Advanced analytics and backtesting for active daytraders."
-*   **Primary CTA Button:**
-    *   `background-color: #A30062;`
-    *   `color: #E0E0E0;`
-    *   `padding: 16px 32px;`
-    *   `border-radius: 4px;`
-    *   `font-size: 18px; font-weight: 600;`
-    *   `box-shadow: 0px 4px 6px rgba(163, 0, 98, 0.4);`
-    *   *Hover:* `background-color: #C20075;`
-    *   *Content:* "Start Free Trial"
-*   **Secondary CTA Button (Optional):**
-    *   `background-color: transparent;`
-    *   `border: 1px solid #A30062;`
-    *   `color: #A30062;`
-    *   `padding: 16px 32px;`
-    *   `border-radius: 4px;`
-    *   `font-size: 18px; font-weight: 600;`
-    *   *Hover:* `background-color: rgba(163, 0, 98, 0.1);`
-    *   *Content:* "Learn More"
-*   **Imagery/Illustration:** Abstract data visualization, trading charts, or a stylized device mockup displaying the app UI. Predominantly dark tones with magenta and cyan highlights.
+*   **Layout**: Full-width, centered content.
+*   **Background**: `--color-background-main` with a subtle, abstract trading-related graphic or animation.
+*   **Title**: `h1` (`--font-size-h1`), `Inter` Bold, `--color-text-primary`. Large, impactful, conveying the core value proposition.
+*   **Subtitle**: `h3` (`--font-size-h3`), `Inter` Regular, `--color-text-secondary`. Explains the application's benefits concisely.
+*   **Call to Action (CTA)**:
+    *   **Button**: Primary button style.
+    *   **Background**: `--color-accent`.
+    *   **Text Color**: `--color-text-primary` (white).
+    *   **Font**: `--font-size-button`, `Inter` SemiBold.
+    *   **Border Radius**: `--border-radius-sm`.
+    *   **Padding**: `16px` vertical, `32px` horizontal.
+    *   **Hover**: Background darkens slightly, subtle scale up (`1.02`).
+*   **Padding**: `--spacing-xl` vertical, `--spacing-lg` horizontal.
 
-### 6.2. Features Section
+### Features Section
 
-*   **Section Title (H2):** `font-size: 36px; font-weight: 700; color: #E0E0E0;`
-    *   *Content:* "Unlock Your Trading Potential"
-*   **Feature Card:**
-    *   `background-color: #1E1E1E;`
-    *   `padding: 32px;`
-    *   `border-radius: 4px;`
-    *   `box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);`
-    *   **Icon:** `font-size: 48px; color: #00FFFF;` (or gradient with #A30062)
-    *   **Feature Title (H4):** `font-size: 24px; font-weight: 600; color: #E0E0E0;`
-    *   **Feature Description (Body):** `font-size: 16px; font-weight: 400; color: #A0A0A0;`
-*   **Layout:** Responsive grid (e.g., 3 columns on desktop, 2 on tablet, 1 on mobile).
+*   **Layout**: Grid of feature cards. Typically 2-3 columns on desktop, 1 column on mobile.
+*   **Section Title**: `h2` (`--font-size-h2`), `Inter` Bold, `--color-text-primary`, centered.
+*   **Feature Card**:
+    *   **Background**: `--color-background-card`.
+    *   **Border Radius**: `--border-radius-md`.
+    *   **Shadow**: `--shadow-md`.
+    *   **Icon**: Large (e.g., 48px), centered at top, `--color-accent`.
+    *   **Title**: `h4` (`--font-size-h4`), `Inter` SemiBold, `--color-text-primary`.
+    *   **Description**: Body text (`--font-size-body`), `Inter` Regular, `--color-text-secondary`.
+    *   **Padding**: `--spacing-md`.
+    *   **Hover**: Subtle lift (`--shadow-lg`, `transform: translateY(-4px)`).
 
-### 6.3. Pricing Section
+### Pricing Section
 
-*   **Section Title (H2):** `font-size: 36px; font-weight: 700; color: #E0E0E0;`
-    *   *Content:* "Simple, Transparent Pricing"
-*   **Pricing Card:**
-    *   `background-color: #1E1E1E;`
-    *   `padding: 32px;`
-    *   `border-radius: 4px;`
-    *   `box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);`
-    *   **Plan Name (H3):** `font-size: 28px; font-weight: 700; color: #E0E0E0;`
-    *   **Price (H1):** `font-size: 48px; font-weight: 700; color: #A30062;` (e.g., "$49")
-    *   **Price Suffix (Body Small):** `font-size: 14px; color: #A0A0A0;` (e.g., "/month")
-    *   **Feature List Item (Body):** `font-size: 16px; color: #E0E0E0;` with checkmark icon (`color: #00C853;`)
-    *   **CTA Button:**
-        *   `background-color: #A30062;`
-        *   `color: #E0E0E0;`
-        *   `padding: 12px 24px;`
-        *   `border-radius: 4px;`
-        *   `font-size: 16px; font-weight: 600;`
-        *   *Hover:* `background-color: #C20075;`
-        *   *Content:* "Choose Plan"
-*   **Highlighted Plan (e.g., "Most Popular"):**
-    *   `border: 2px solid #A30062;`
-    *   `background-color: #2A001A;` (slightly darker magenta-tinted background)
-    *   Optional "Popular" badge: `background-color: #00FFFF; color: #121212; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 700;`
+*   **Layout**: Grid of pricing cards. Typically 3 columns on desktop, 1 column on mobile.
+*   **Section Title**: `h2` (`--font-size-h2`), `Inter` Bold, `--color-text-primary`, centered.
+*   **Pricing Card**:
+    *   **Background**: `--color-background-card`.
+    *   **Border Radius**: `--border-radius-md`.
+    *   **Shadow**: `--shadow-md`.
+    *   **Header**:
+        *   **Plan Name**: `h3` (`--font-size-h3`), `Inter` SemiBold, `--color-text-primary`.
+        *   **Price**: `h1` (`--font-size-h1`), `Inter` Bold, `--color-accent`.
+        *   **Billing Cycle**: Body text (`--font-size-body`), `Inter` Regular, `--color-text-secondary`.
+    *   **Features List**:
+        *   Unordered list with checkmark icons (`--color-success`).
+        *   Text: Body text (`--font-size-body`), `Inter` Regular, `--color-text-primary`.
+    *   **Call to Action (CTA)**:
+        *   **Button**: Primary button style.
+        *   **Background**: `--color-accent`.
+        *   **Text Color**: `--color-text-primary` (white).
+        *   **Font**: `--font-size-button`, `Inter` SemiBold.
+        *   **Border Radius**: `--border-radius-sm`.
+        *   **Padding**: `14px` vertical, `28px` horizontal.
+        *   **Hover**: Background darkens slightly, subtle scale up (`1.02`).
+    *   **Highlight (e.g., "Pro" plan)**: May feature a `2px` border in `--color-primary` or a slightly darker background (`#2A2A2A`) to stand out.
+    *   **Padding**: `--spacing-md` vertical, `--spacing-sm` horizontal.
 
-### 6.4. Footer Section
+### Footer Section
 
-*   **Background:** `background-color: #0A0A0A;` (slightly darker than main background)
-*   **Text (Body Small):** `font-size: 14px; color: #A0A0A0;`
-*   **Links:** `color: #A0A0A0;`
-    *   *Hover:* `color: #A30062; text-decoration: underline;`
-*   **Copyright:** `font-size: 14px; color: #A0A0A0;`
-    *   *Content:* "© [Year] Trading Journal. All rights reserved."
-*   **Social Media Icons:** `color: #A0A0A0; font-size: 24px;`
-    *   *Hover:* `color: #A30062;`
-*   **Layout:** Typically 3-4 columns for links on desktop, stacked on mobile.
+*   **Layout**: Dark background, typically multiple columns for navigation links, legal information, and social media.
+*   **Background**: `--color-background-main` (or slightly darker, e.g., `#101010`).
+*   **Links**:
+    *   Text: Body text (`--font-size-body`), `Inter` Regular, `--color-text-secondary`.
+    *   **Hover**: `--color-accent`, subtle underline.
+*   **Copyright**: Small text (`--font-size-small`), `Inter` Regular, `--color-text-secondary`.
+*   **Social Icons**:
+    *   Color: `--color-text-secondary`.
+    *   **Hover**: `--color-accent`.
+*   **Padding**: `--spacing-lg` vertical, `--spacing-md` horizontal.
 
 ---
 
 ## 7. Responsive Breakpoints
 
-Standard breakpoints for adapting the layout across devices.
+The design is optimized for a mobile-first approach, adapting gracefully to larger screens.
 
-*   **Mobile:** `0px - 767px`
-*   **Tablet:** `768px - 1023px`
-*   **Desktop:** `1024px +`
+*   **Mobile**: Up to `767px` (e.g., `max-width: 767px`)
+*   **Tablet**: From `768px` to `1023px` (e.g., `min-width: 768px` and `max-width: 1023px`)
+*   **Desktop**: From `1024px` and above (e.g., `min-width: 1024px`)
 
 ---
 
@@ -190,15 +171,16 @@ Standard breakpoints for adapting the layout across devices.
 
 Animations should be subtle, professional, and enhance the user experience without being distracting.
 
-*   **Duration:** `200ms - 300ms` for most interactive elements (buttons, links, card hovers).
-*   **Easing:** `ease-in-out` for smooth transitions.
-*   **Properties:**
-    *   **Opacity:** For fades, showing/hiding elements.
-    *   **Transform:** For subtle scaling (`scale(1.02)`), translations (`translateY(-2px)`), or rotations (e.g., for icons).
-    *   **Background-color:** For button hovers, active states.
-    *   **Border-color:** For input focus states.
-*   **Examples:**
-    *   Button hover: `background-color` change, slight `transform: translateY(-2px);`
-    *   Card hover: `box-shadow` increase, slight `transform: translateY(-4px);`
-    *   Menu open/close: `opacity` and `transform` (e.g., slide in from top/side).
-    *   Data updates: Subtle `opacity` or `background-color` flash for new data points.
+*   **Type**: Smooth transitions, subtle fades, and gentle transforms.
+*   **Duration**: `200ms` to `300ms` for most interactive elements.
+*   **Easing**: `ease-in-out` or `cubic-bezier(0.4, 0, 0.2, 1)` for a natural feel.
+*   **Common Applications**:
+    *   **Button Hovers**: Background color change, slight scale (`transform: scale(1.02)`).
+    *   **Card Hovers**: Subtle lift (`transform: translateY(-4px)`) combined with a shadow change (`--shadow-lg`).
+    *   **Link Hovers**: Color change, subtle underline or background highlight.
+    *   **State Changes**: Gentle opacity or color transitions for active/inactive states.
+*   **Principles**:
+    *   **Purposeful**: Animations should serve a clear purpose (feedback, guidance, delight).
+    *   **Performance**: Ensure animations run smoothly at 60fps on all target devices.
+    *   **Subtle**: Avoid flashy or overly complex animations that could detract from the content.
+```
